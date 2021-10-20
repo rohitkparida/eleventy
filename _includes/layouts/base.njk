@@ -58,7 +58,8 @@
   </head>
   <body>
     <header>
-      <nav>
+       <!---
+       <nav>
         <div id="nav">
           <h1><a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a></h1>
           {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
@@ -68,6 +69,7 @@
         </div>
         <div id="reading-progress" aria-hidden="true"></div>
       </nav>
+      --->
       <h1>{{ title }}</h1>
       {% block extraArticleHeader %}{% endblock %}
       <dialog id="message"></dialog>
@@ -78,7 +80,7 @@
       </noscript>
       {% endif %}
     </header>
-
+    <hr>
     <main>
       <article>
         {% block article %}
@@ -90,7 +92,7 @@
         {% endif %}
       </article>
     </main>
-
+    <hr>
     <footer>
       <a href="/about/">{{ metadata.author.name }}</a>
     </footer>
