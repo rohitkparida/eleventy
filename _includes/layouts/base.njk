@@ -82,6 +82,10 @@
     </header>
     <hr>
     <main>
+    <article>
+       {{ description }}
+    </article>
+    <hr>
       <article>
         {% block article %}
           {{ content | safe }}
@@ -94,7 +98,10 @@
     </main>
     <hr>
     <footer>
-      <a href="/about/">{{ metadata.author.name }}</a>
+      <a href="/">Home</a>
+      <a href="/author/">Author</a>
+      <a href="/disclaimer/">Disclaimer</a>
+      <a href="/about/">About</a>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
