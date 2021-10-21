@@ -896,11 +896,11 @@ main {
 footer {
 	background: #0f0f0f;
 	color: #fff;
-	padding: 32px;
+	padding: 16px;
 }
 
 footer>* {
-	margin: 16px
+	margin: 8px
 }
 
 footer nav a img {
