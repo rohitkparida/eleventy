@@ -92,16 +92,14 @@
         {% endblock %}
 
         {% if page.url and page.url.indexOf("/posts/") > -1 %}
-          <p>Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
         {% endif %}
       </article>
     </main>
     <hr>
     <footer>
-      <a href="/">Home</a>
-      <a href="/author/">Author</a>
-      <a href="/disclaimer/">Disclaimer</a>
-      <a href="/about/">About</a>
+      <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a>
+      <a href="/disclaimer/"{% if page.url == "/disclaimer/" %} aria-current="page"{% endif %}>Disclaimer</a>
+      <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->
