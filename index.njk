@@ -11,7 +11,7 @@ pagination:
 
 <h1>Posts</h1>
 {% include "postslist.njk" %}
-<nav aria-labelledby="my-pagination">
+<!---<nav aria-labelledby="my-pagination">
     {% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}<span>First</span>{% endif %}
     {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}<span>Previous</span>{% endif %}
 {%- for pageEntry in pagination.pages %}
@@ -19,5 +19,5 @@ pagination:
 {%- endfor %}
     {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}<span>Next</span>{% endif %}
     {% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}<span>Last</span>{% endif %}
-</nav>
+</nav>--->
 

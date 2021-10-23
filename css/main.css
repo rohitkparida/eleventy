@@ -549,9 +549,7 @@ small {
 	color: #ccc
 }
 
-hr {
-	border-bottom: 2px solid #2C2C2C
-}
+
 
 figcaption {
 	color: #ccc;
@@ -783,7 +781,7 @@ header label {
 	display: none
 }
 
-header p, header h1 {
+header>* {
     margin: 24px
 }
 
@@ -833,6 +831,11 @@ header nav label {
 main,footer {
 	max-width: 70rem;
 	margin: 0 auto;
+}
+
+hr {
+	border-bottom: 2px solid #2C2C2C;
+	margin: 0
 }
 
 footer {
