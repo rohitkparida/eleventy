@@ -1,12 +1,9 @@
 ---
 layout: layouts/base.njk
 title: About
-templateClass: tmpl-post
-eleventyNavigation:
-  key: About
-  order: 3
+description: Learn more about the website and it's author.
 ---
 
-I am a person that writes stuff.
+Author of this website is Rohit K. Parida.
 
-This blog template is based on [eleventy-high-performance-blog](https://www.industrialempathy.com/posts/eleventy-high-performance-blog/) which itself is based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
+This website was created to record and communicate author's experiences, observations and occurrences witnessed by them.

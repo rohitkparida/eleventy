@@ -1,21 +1,16 @@
 ---
 title: Thoughts written.
-layout: layouts/home.njk 
+layout: layouts/base.njk 
 description: This is a record of occurrences, experiences and observations.
-image: https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg
 date: Last Modified
-
 pagination:
   data: collections.posts
   size: 20
   alias: postslist
 ---
 
-<div id="posts">
-  <h1>Posts</h1>
-  {% include "postslist.njk" %}
-</div>
-
+<h1>Posts</h1>
+{% include "postslist.njk" %}
 <nav aria-labelledby="my-pagination">
     {% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}<span>First</span>{% endif %}
     {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}<span>Previous</span>{% endif %}
@@ -25,3 +20,4 @@ pagination:
     {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}<span>Next</span>{% endif %}
     {% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}<span>Last</span>{% endif %}
 </nav>
+
