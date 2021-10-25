@@ -5,27 +5,21 @@
 }
 
 [aria-current] {
-	background-color: rgb(49, 49, 49);
+	background-color: #313131
 }
 
-nav{
+nav {
 	padding: 16px;
-	border: 2px solid #2C2C2C
+	border: 2px solid #2c2c2c
 }
 
 nav>* {
-    margin: 0 10px;
+	margin: 0 10px
 }
 
 .test-dead-code-elimination-sentinel {
 	color: red
 }
-
-main > * {
-	
-}
-
-
 
 main img {
 	content-visibility: auto
@@ -39,9 +33,6 @@ header nav {
 	z-index: 1
 }
 
-
-/*! purgecss start ignore */
-
 :root {
 	--main-width: calc(100vw - 3em)
 }
@@ -51,9 +42,6 @@ header nav {
 		--main-width: calc(37.5em - 3em)
 	}
 }
-
-
-/*! purgecss end ignore */
 
 share-widget {
 	position: fixed;
@@ -91,7 +79,7 @@ dialog {
 
 img[align=left] {
 	width: auto;
-	height: 16rem;
+	height: 16rem
 }
 
 dl {
@@ -124,7 +112,7 @@ header aside {
 
 time {
 	margin-left: 4px;
-	color: var(--sectxt);
+	color: var(--sectxt)
 }
 
 @font-face {
@@ -145,7 +133,7 @@ body {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2em
 }
 
 pre {
@@ -303,21 +291,21 @@ template {
 
 h1 {
 	font-size: 3em;
-	line-height: 1.25;
+	line-height: 1.25
 }
 
 h2 {
 	font-size: 2.5em;
-	line-height: 1.2;
+	line-height: 1.2
 }
 
 h3 {
 	font-size: 2em;
-	line-height: 1.125;
+	line-height: 1.125
 }
 
 h4 {
-	font-size: 1.5em;
+	font-size: 1.5em
 }
 
 h4,
@@ -326,12 +314,12 @@ h5 {
 }
 
 h5 {
-	font-size: 1.25em;
+	font-size: 1.25em
 }
 
 h6 {
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 1.5em
 }
 
 body,
@@ -343,16 +331,15 @@ ul {
 	line-height: 1.5
 }
 
-
 h1 {
 	font-size: 24px;
 	font-weight: 400;
-	letter-spacing: 0.5
+	letter-spacing: .5
 }
 
 h1,
 h2 {
-	line-height: 2.4rem;
+	line-height: 2.4rem
 }
 
 h2 {
@@ -365,7 +352,7 @@ h3 {
 
 h3,
 h4 {
-	line-height: 1.6rem;
+	line-height: 1.6rem
 }
 
 h4 {
@@ -375,7 +362,7 @@ h4 {
 h5,
 h6 {
 	font-size: 1rem;
-	line-height: 1.6rem;
+	line-height: 1.6rem
 }
 
 body,
@@ -386,7 +373,6 @@ ul {
 	font-size: 16px;
 	line-height: 1.6
 }
-
 
 @media (min-width:600px) {
 	h1 {
@@ -399,21 +385,21 @@ ul {
 	}
 	h3 {
 		font-size: 2.1989rem;
-		line-height: 2.64rem;
+		line-height: 2.64rem
 	}
 	h4 {
 		font-size: 1.5554rem
 	}
 	h4,
 	h5 {
-		line-height: 1.76rem;
+		line-height: 1.76rem
 	}
 	h5,
 	h6 {
 		font-size: 1.1rem
 	}
 	h6 {
-		line-height: 1.76rem;
+		line-height: 1.76rem
 	}
 	body,
 	ol,
@@ -436,21 +422,21 @@ ul {
 	}
 	h3 {
 		font-size: 2.7rem;
-		line-height: 2.88rem;
+		line-height: 2.88rem
 	}
 	h4 {
 		font-size: 1.8rem
 	}
 	h4,
 	h5 {
-		line-height: 1.92rem;
+		line-height: 1.92rem
 	}
 	h5,
 	h6 {
 		font-size: 1.2rem
 	}
 	h6 {
-		line-height: 1.92rem;
+		line-height: 1.92rem
 	}
 	body,
 	ol,
@@ -549,8 +535,6 @@ small {
 	color: #ccc
 }
 
-
-
 figcaption {
 	color: #ccc;
 	margin-top: .75em;
@@ -581,7 +565,7 @@ html {
 
 form {
 	padding: 1.5em 1.5em 0;
-	border: .2rem solid #202020;
+	border: .2rem solid #202020
 }
 
 form small {
@@ -594,7 +578,7 @@ fieldset {
 }
 
 fieldset legend {
-	font-size: 150%;
+	font-size: 150%
 }
 
 button,
@@ -742,7 +726,7 @@ video {
 body {
 	font-family: var(--font-family);
 	background: #0f0f0f;
-	color: #CFCFCF
+	color: #cfcfcf
 }
 
 section {
@@ -782,7 +766,7 @@ header label {
 }
 
 header>* {
-    margin: 24px
+	margin: 24px
 }
 
 header nav {
@@ -828,20 +812,21 @@ header nav label {
 	text-align: right
 }
 
-main,footer {
+footer,
+main {
 	max-width: 70rem;
-	margin: 0 auto;
+	margin: 0 auto
 }
 
 hr {
-	border-bottom: 2px solid #2C2C2C;
+	border-bottom: 2px solid #2c2c2c;
 	margin: 0
 }
 
 footer {
 	background: #0f0f0f;
 	color: #fff;
-	margin: 24px;
+	margin: 24px
 }
 
 footer>* {
@@ -866,8 +851,9 @@ ol,
 ul {
 	margin-top: 0;
 	padding-left: 16px
-}4
-dl {
+}
+
+4 dl {
 	display: inline-block;
 	margin: 0 0 1.5em
 }
