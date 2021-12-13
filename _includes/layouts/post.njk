@@ -8,9 +8,9 @@ templateClass: tmpl-post
 {% block extraArticleHeader %}
    {% set wc = content | striptags | wordcount %}
    {% set wPerMinute = (wc / 240) + 1 %}
-   <aside>
-     {{ wPerMinute | round }} min read.
-   </aside>
+   <span>
+     {{ wPerMinute | round }} min read
+   </span>
 {% endblock %}
 
 {% set shareUrl = metadata.url + page.url %}
@@ -21,7 +21,7 @@ templateClass: tmpl-post
 <p>
 </p>
 
-<span>Published <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></span>
+<p>Published - <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
 
 <share-widget>
   <button on-click="share" aria-label="Share" href="{{ shareUrl | safe }}">
